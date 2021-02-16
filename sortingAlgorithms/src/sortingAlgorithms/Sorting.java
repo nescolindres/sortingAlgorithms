@@ -25,7 +25,16 @@ public class Sorting {
 	private int getPivot(int low, int high) {
 		Random rand = new Random();
 		return rand.nextInt((high-low) + 1) + low;
+		
+		// we can also get a better pivot by comparing the left, right, and middle elements and getting the median of those three.
 	}
+	privae int medianOfThree () {
+		int privot;
+		
+	return pivot;	
+	}
+	
+	
 	// moves all n< pivot to left pivot and all n> pivot
 	//to right of pivot, then returns pivot index.
 	private int partition(int[] A, int low, int high) {
